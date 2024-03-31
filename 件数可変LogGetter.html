@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>閲覧用 ccfolia log getter</title>
+    <style>
+        .numbered-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px; /* 適宜調整 */
+        }
+    
+        .numbered-item {
+          display: flex;
+          align-items: start;
+        }
+    
+        .number {
+          width: auto; /* 番号部分の幅 */
+          text-align: right; /* ChatGPT君優秀すぎて頭おかしくなりそう頭おかしくなりそう頭おかしくなりそう */
+        }
+
+        .numbered-item p {
+            margin-top: 0;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+function _0x38da(){var _0x1e9795=['fields','show','<input>','channel','343042FKalVN','html_selector','result','title',';\x22>','12484uflKte','remove039','removeslash','stringValue','join','forEach','responseType','nextPageToken','name','text','&lt;','#room_id','split','1370037KkJctm','/messages/','channelName','\x20\x20\x20\x20','終了位置の値が🌈','mapValue',']</span>','#html','9moDePi','<label>','12QmWuyb','1495HwARkW','alert','GET','\x20\x20\x20\x20<span\x20style=\x22color:#000000\x22>','&amp;','__tab__all','#log_number','28DKzolT','&pageToken=','</span>\x20:','<div></div>','&#039;','all','append','val','json','\x20\x20\x20\x20\x20\x20','?pageSize=','&gt;','removegt','</div>','#progress','removeamp','removequot','<div\x20class=\x22numbered-item\x22\x20style=\x22color:','open','210ZLjLrm','\x20\x20\x20\x20</span>','log','12PvtSaz','2575544tuxjRi','130AsSlUn','\x20\x20<p>','change','10617220wGVEFN','#text_start','clone','click','#text_count','#html_selector','radio','https://firestore.googleapis.com/v1/projects/ccfolia-160aa/databases/(default)/documents/rooms/','343188CEQKJf','hide','sort','message_num','\x20\x20</p>','13460579qeApZq','documents','extend','replace','\x20\x20<div\x20class=\x22number\x22>','\x20\x20\x20\x20<span>','[name=\x22html_selector\x22]:radio:checked','#get_log','send','slice','#__tab__','load','<br>','#text_end','[name=\x22html_selector\x22]:radio','__tab__','createTime','length','\x20\x20\x20\x20<span>\x20['];_0x38da=function(){return _0x1e9795;};return _0x38da();}(function(_0x1ba698,_0x4d00ef){var _0x18b522=_0x5e65,_0xfd2e48=_0x1ba698();while(!![]){try{var _0x28190b=-parseInt(_0x18b522(0x155))/0x1*(parseInt(_0x18b522(0x124))/0x2)+-parseInt(_0x18b522(0x162))/0x3*(-parseInt(_0x18b522(0x109))/0x4)+parseInt(_0x18b522(0x129))/0x5*(parseInt(_0x18b522(0x134))/0x6)+-parseInt(_0x18b522(0x111))/0x7*(parseInt(_0x18b522(0x128))/0x8)+parseInt(_0x18b522(0x16a))/0x9*(-parseInt(_0x18b522(0x12c))/0xa)+parseInt(_0x18b522(0x139))/0xb*(-parseInt(_0x18b522(0x127))/0xc)+-parseInt(_0x18b522(0x10a))/0xd*(-parseInt(_0x18b522(0x150))/0xe);if(_0x28190b===_0x4d00ef)break;else _0xfd2e48['push'](_0xfd2e48['shift']());}catch(_0x28208e){_0xfd2e48['push'](_0xfd2e48['shift']());}}}(_0x38da,0xc11f3));var request=new XMLHttpRequest(),message_json=[],tab_list={},current_room_id='';const RET='\x0a',CRLF='\x0d\x0a';function htmlspecialchars(_0x45a7dc){var _0x2f2a63=_0x5e65;return(_0x45a7dc+'')[_0x2f2a63(0x13c)](/&/g,_0x2f2a63(0x10e))[_0x2f2a63(0x13c)](/"/g,'&quot;')[_0x2f2a63(0x13c)](/'/g,_0x2f2a63(0x115))['replace'](/</g,_0x2f2a63(0x15f))[_0x2f2a63(0x13c)](/>/g,_0x2f2a63(0x11c));}function removespecialchars(_0x1e9c84){var _0x1c19a6=_0x5e65;return(_0x1e9c84+'')['replace'](/&/g,_0x1c19a6(0x120))[_0x1c19a6(0x13c)](/"/g,_0x1c19a6(0x121))[_0x1c19a6(0x13c)](/'/g,_0x1c19a6(0x156))['replace'](/</g,'removelt')[_0x1c19a6(0x13c)](/>/g,_0x1c19a6(0x11d))[_0x1c19a6(0x13c)](/ /g,'removespace')[_0x1c19a6(0x13c)](/\//g,_0x1c19a6(0x157));}function get_property(_0x7501eb,_0x1643e9){for(const _0x525176 of _0x1643e9){if(_0x525176 in _0x7501eb)_0x7501eb=_0x7501eb[_0x525176];else return null;}return _0x7501eb;}function _0x5e65(_0x50f49e,_0x1eefc2){var _0x38dadd=_0x38da();return _0x5e65=function(_0x5e65c9,_0x220f22){_0x5e65c9=_0x5e65c9-0x109;var _0x2155f5=_0x38dadd[_0x5e65c9];return _0x2155f5;},_0x5e65(_0x50f49e,_0x1eefc2);}function get_url(_0x4b91ef,_0x4ee18f='',_0x2e7fef=0x12c){var _0x2f23d7=_0x5e65;const _0x324b36=_0x2f23d7(0x133);return _0x324b36+_0x4b91ef+_0x2f23d7(0x163)+_0x2f23d7(0x11b)+_0x2e7fef+_0x2f23d7(0x112)+_0x4ee18f;}function get_current_tab(){var _0xb869b0=_0x5e65;return $(_0xb869b0(0x13f))[_0xb869b0(0x118)]();}function get_tab_dom_id(_0x180f93){return'#__tab__'+_0x180f93;}function process_messages(_0x295fdd){var _0x32006c=_0x5e65;_0x295fdd[_0x32006c(0x136)](function(_0x1f2b02,_0x1b023f){var _0x1b1dc8=_0x32006c;if(_0x1f2b02[_0x1b1dc8(0x149)]<_0x1b023f['createTime'])return-0x1;if(_0x1f2b02['createTime']>_0x1b023f[_0x1b1dc8(0x149)])return 0x1;return 0x0;}),console[_0x32006c(0x126)](Number($(_0x32006c(0x130))[_0x32006c(0x118)]())),_0x295fdd[_0x32006c(0x15a)](function(_0x3d6fa9,_0x363546,_0x2e337e){var _0x28c6ac=_0x32006c;_0x2e337e[_0x363546][_0x28c6ac(0x137)]=_0x363546+0x1;});var _0x36ee24=$(_0x32006c(0x12d))[_0x32006c(0x118)](),_0x3c8857=$(_0x32006c(0x146))[_0x32006c(0x118)]();if(!isNaN(_0x36ee24)&&_0x36ee24!=''&&!isNaN(_0x3c8857)&&_0x3c8857!='')var _0x3ad69c=_0x295fdd[_0x32006c(0x142)](Number(_0x36ee24)-0x1,Number(_0x3c8857));else var _0x3ad69c=_0x295fdd[_0x32006c(0x142)](-Number(_0x36ee24));tab_list={};var _0x2a8f86={},_0x129b22=$('<div></div>',{'id':_0x32006c(0x10f)});;$(_0x32006c(0x169))[_0x32006c(0x15e)](''),$(_0x32006c(0x131))[_0x32006c(0x15e)](''),tab_list[_0x32006c(0x116)]='全件',_0x2a8f86[_0x32006c(0x116)]=$(_0x32006c(0x114),{'id':'__tab__'+_0x32006c(0x116)}),$(_0x32006c(0x131))[_0x32006c(0x117)]($(_0x32006c(0x14e),{'type':'radio','name':_0x32006c(0x151),'value':_0x32006c(0x116),'checked':!![]}))[_0x32006c(0x117)]($(_0x32006c(0x16b),{'for':'all'})[_0x32006c(0x15e)]('全件')),_0x3ad69c[_0x32006c(0x15a)](function(_0x4b8804){var _0x9ee178=_0x32006c;const _0x2b829d=removespecialchars(_0x4b8804['fields'][_0x9ee178(0x14f)]['stringValue']),_0x5560de=_0x4b8804['fields'][_0x9ee178(0x164)][_0x9ee178(0x158)];!(_0x2b829d in tab_list)&&(tab_list[_0x2b829d]=_0x5560de,_0x2a8f86[_0x2b829d]=$('<div></div>',{'id':_0x9ee178(0x148)+_0x2b829d}),$(_0x9ee178(0x131))[_0x9ee178(0x117)]($('<input>',{'type':_0x9ee178(0x132),'name':_0x9ee178(0x151),'value':_0x2b829d,'checked':![]}))['append']($(_0x9ee178(0x16b),{'for':_0x2b829d})[_0x9ee178(0x15e)](_0x5560de)));if(_0x4b8804['fields'][_0x9ee178(0x15e)][_0x9ee178(0x158)]!=''){var _0x56f1bd=get_property(_0x4b8804[_0x9ee178(0x14c)],[_0x9ee178(0x13b),_0x9ee178(0x167),_0x9ee178(0x14c),'roll',_0x9ee178(0x167),_0x9ee178(0x14c),_0x9ee178(0x152),_0x9ee178(0x158)]);!_0x56f1bd&&(_0x56f1bd='');_0x56f1bd['replace'](/\r?\n/,'');var _0x4cac5e=htmlspecialchars(_0x4b8804[_0x9ee178(0x14c)][_0x9ee178(0x15e)][_0x9ee178(0x158)])[_0x9ee178(0x161)](/\r?\n/);_0x4cac5e=_0x4cac5e[_0x9ee178(0x159)](_0x9ee178(0x145)+RET+_0x9ee178(0x165))+_0x56f1bd,string=RET,string+=_0x9ee178(0x122)+_0x4b8804[_0x9ee178(0x14c)]['color'][_0x9ee178(0x158)]+_0x9ee178(0x154),string+=_0x9ee178(0x13d)+_0x4b8804[_0x9ee178(0x137)]+':'+'</div>',string+='\x20\x20<p>',string+=_0x9ee178(0x14b)+_0x5560de+_0x9ee178(0x168)+RET,string+='\x20\x20\x20\x20<span>'+htmlspecialchars(_0x4b8804[_0x9ee178(0x14c)][_0x9ee178(0x15d)]['stringValue'])+_0x9ee178(0x113)+RET,string+=_0x9ee178(0x10d)+RET,string+='\x20\x20\x20\x20\x20\x20'+_0x4cac5e+RET,string+='\x20\x20\x20\x20</span>'+RET,string+=_0x9ee178(0x138)+RET,$(_0x2a8f86[_0x9ee178(0x116)])[_0x9ee178(0x117)](string),string=RET,string+=_0x9ee178(0x122)+_0x4b8804['fields']['color']['stringValue']+_0x9ee178(0x154),string+=_0x9ee178(0x13d)+_0x4b8804[_0x9ee178(0x137)]+':'+_0x9ee178(0x11e),string+=_0x9ee178(0x12a),string+=_0x9ee178(0x13e)+htmlspecialchars(_0x4b8804['fields'][_0x9ee178(0x15d)][_0x9ee178(0x158)])+'</span>\x20:'+RET,string+='\x20\x20\x20\x20<span\x20style=\x22color:#000000\x22>'+RET,string+=_0x9ee178(0x11a)+_0x4cac5e+RET,string+=_0x9ee178(0x125)+RET,string+=_0x9ee178(0x138)+RET,string+='</div>'+RET,$(_0x2a8f86[_0x2b829d])[_0x9ee178(0x117)](string);}});for(const _0x2152a4 in _0x2a8f86){$(_0x32006c(0x169))[_0x32006c(0x117)](_0x2a8f86[_0x2152a4]),_0x2152a4!='all'&&$(_0x32006c(0x143)+_0x2152a4)[_0x32006c(0x135)]();}$(_0x32006c(0x147))[_0x32006c(0x12b)](function(){var _0x3304b6=_0x32006c;const _0x1dafb9=get_current_tab();for(const _0x14dc2f in tab_list){_0x14dc2f==_0x1dafb9?$(get_tab_dom_id(_0x14dc2f))[_0x3304b6(0x14d)]():$(get_tab_dom_id(_0x14dc2f))[_0x3304b6(0x135)]();}}),$(_0x32006c(0x11f))[_0x32006c(0x15e)]('完了');}function convertToHTML(_0x438972){var _0x457628=_0x5e65;return jQuery('<div>')['append'](_0x438972[_0x457628(0x12e)](!![]))['html']();}function http_request_callback(){var _0x24a655=_0x5e65;console[_0x24a655(0x126)](this);const _0x555fe6=this['response'];for(const _0x26da39 of _0x555fe6[_0x24a655(0x13a)]){message_json['push'](_0x26da39);}$(_0x24a655(0x110))[_0x24a655(0x15e)](message_json[_0x24a655(0x14a)]+'件'),_0x555fe6[_0x24a655(0x15c)]?(this['open'](_0x24a655(0x10c),get_url(current_room_id,_0x555fe6[_0x24a655(0x15c)]),!![]),this[_0x24a655(0x15b)]='json',this['send']()):($(_0x24a655(0x11f))[_0x24a655(0x15e)]('HTML生成中...'),setTimeout(()=>{process_messages(message_json);},0x1),this['removeEventListener']('load',http_request_callback));}$(function(){var _0x47f707=_0x5e65;$(_0x47f707(0x140))[_0x47f707(0x12f)](function(_0x2c199d){var _0x58b3f0=_0x47f707;if(isNaN(Number($(_0x58b3f0(0x12d))[_0x58b3f0(0x118)]()))&&$(_0x58b3f0(0x12d))[_0x58b3f0(0x118)]()!=''){window[_0x58b3f0(0x10b)]('開始位置or表示件数の値が🌈');return;}if(isNaN(Number($(_0x58b3f0(0x146))[_0x58b3f0(0x118)]()))&&$(_0x58b3f0(0x146))['val']()!=''){window['alert'](_0x58b3f0(0x166));return;}$(_0x58b3f0(0x11f))[_0x58b3f0(0x15e)]('取得中...'),current_room_id=$(_0x58b3f0(0x160))['val'](),document[_0x58b3f0(0x153)]=current_room_id+'\x20'+'ccfolia\x20log\x20getter',message_json['splice'](0x0),request[_0x58b3f0(0x123)]('GET',get_url(current_room_id),!![]),request[_0x58b3f0(0x15b)]=_0x58b3f0(0x119),request[_0x58b3f0(0x141)](),request['addEventListener'](_0x58b3f0(0x144),http_request_callback);});});    </script>
+</head>
+
+
+<body>
+    <header style="background: #ffffff;position: fixed; ">
+    <input type="text" id="room_id" placeholder="ルームIDを入力">
+    <input type="text" id="text_start" placeholder="開始位置or表示件数">
+    -
+    <input type="text" id="text_end" placeholder="修了位置">
+    <input type="button" id="get_log" value="ログを取得">
+        <span id="progress"></span>
+        <span id="log_number"></span>
+        <form id="html_selector" style="height:50px; overflow: auto;"></form>
+    </header>
+    <div>
+
+    </div>
+    
+    <div id="html" style="padding-top: 80px;"></div>
+    <br>左枠に卓ID、右に表示数を入れてくれ(^^)
+    <br>0で全件表示だけど
+    <br>ver1.1:開始位置終了位置の指定可、レス番号もついて更に濃厚に
+    <br>       開始位置だけ記述すれば最新n件、両方記述でその範囲のログを取るけど
+    
+</body>
+
+</html>
